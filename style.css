@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+body{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    background-color: darkslategray;
+    margin: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    width: 350px;
+    height: auto;
+}
+
+.screen{
+    background-color: white;
+    border-style: solid;
+    margin-top: 20px;
+    border-radius: 8px;
+    border-width: 2px;
+    width: 320px;
+    height: 100px;
+}
+
+.fix{
+    display: flex;
+    margin: 15px 0px;
+    gap: 20px;
+}
+
+#clear, #delete{
+    width: 150px;
+    background-color: lightsteelblue;
+}
+
+#clear:hover, #delete:hover{
+    background-color: lightslategray;
+}
+
+#clear:active, #delete:active{
+    background-color: lightskyblue;
+}
+
+button{
+    border-radius: 5px;
+    border-style: solid;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    box-shadow: 0 2px #999;
+}
+
+button:hover{
+    background-color: lightgrey;
+}
+
+button:active{
+    transform: translateY(2px);
+    box-shadow: 0 2px #666;
+    background-color: lightgreen;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.row{
+    display: flex;
+    margin: 5px 0px;
+    gap: 6px;
+}
+
+.operator{
+    color: red;
+}
+
+.solve{
+    color: green;
+}
