@@ -8,35 +8,38 @@
 </head>
 <body>
     <div id="container">
-        <div class="screen"></div>
+        <div class="screen">
+            <div class="result"></div>
+            <div class="input"></div>
+        </div>
         <div class="fix">
-            <button id="clear">CLEAR</button>
-            <button id="delete">DELETE</button>
+            <button id="clear" onclick="cleanScreen()">CLEAR</button>
+            <button id="delete" onclick="deleteLast()">DELETE</button>
         </div>
         <div class="main">
             <div class="row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operator">/</button>
+                <button class="number" onclick="addToScreen(7)">7</button>
+                <button class="number" onclick="addToScreen(8)">8</button>
+                <button class="number" onclick="addToScreen(9)">9</button>
+                <button class="operator" onclick="addToScreen('/')">/</button>
             </div>
             <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operator">*</button>
+                <button class="number" onclick="addToScreen(4)">4</button>
+                <button class="number" onclick="addToScreen(5)">5</button>
+                <button class="number" onclick="addToScreen(6)">6</button>
+                <button class="operator" onclick="addToScreen('*')">*</button>
             </div>
             <div class="row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="operator">-</button>
+                <button class="number" onclick="addToScreen(1)">1</button>
+                <button class="number" onclick="addToScreen(2)">2</button>
+                <button class="number" onclick="addToScreen(3)">3</button>
+                <button class="operator" onclick="addToScreen('-')">-</button>
             </div>
             <div class="row">
-                <button>.</button>
-                <button>0</button>
-                <button class="solve">=</button>
-                <button class="operator">+</button>
+                <button class="point" onclick="addToScreen('.')">.</button>
+                <button class="number" onclick="addToScreen(0)">0</button>
+                <button class="solve" onclick="solve()">=</button>
+                <button class="operator" onclick="addToScreen('+')">+</button>
             </div>
         </div>
     </div>    
